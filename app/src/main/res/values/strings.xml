@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Image Search</string>
+    <string name="app_name">Pixabay Search</string>
     <string name="home_screen_title">Search Images</string>
     <string name="home_screen_place_holder">Search…</string>
     <string name="home_screen_alert_dialog_title">Show More Detail</string>
