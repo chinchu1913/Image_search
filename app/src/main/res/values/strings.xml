@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Image Search</string>
+    <string name="home_screen_title">Search Images</string>
+    <string name="home_screen_place_holder">Search…</string>
+    <string name="home_screen_alert_dialog_title">Show More Detail</string>
+    <string name="home_screen_alert_dialog_body">Do you want to see more details about this image?</string>
+    <string name="home_screen_alert_dialog_negative">Dismiss</string>
+    <string name="home_screen_alert_dialog_positive">Yes</string>
+    <string name="home_screen_item_image">item image</string>
+
+    <string name="image_details_screen_title">Image Details</string>
+    <string name="image_details_screen_back_button">go back</string>
+    <string name="image_details_screen_uploaded_by">Uploaded By</string>
+    <string name="image_details_screen_tags">Tags</string>
+    <string name="image_details_screen_likes">Likes</string>
+    <string name="image_details_screen_downloads">Downloads</string>
+    <string name="image_details_screen_comments">Comments</string>
+    <string name="image_details_screen_full_image">Full screen image</string>
+    <string name="image_details_screen_user_image">User Image</string>
+
+    <string name="text_no_connectivity">No internet connection</string>
+    <string name="text_connectivity">Connected</string>
+</resources>
