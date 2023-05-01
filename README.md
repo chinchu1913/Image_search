@@ -10,8 +10,12 @@
 
 * Dark mode and light mode implemented(system theme)
 
+* Online and offline handling
+
 * Clean architecture is used in this app
 
 * View model with used in the app to populate the data
 
 * The UI is build using jetpack compose
+
+* Unit tests of repository and data
