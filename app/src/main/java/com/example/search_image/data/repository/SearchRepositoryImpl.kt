@@ -21,13 +21,12 @@ class SearchRepositoryImpl @Inject constructor(
     private val db: SearchDatabase,
 
     ) : SearchRepository {
-    private val dao = db.dao
 
     override suspend fun getSearchResults(searchQuery: String): Flow<Resource<List<Search>>> {
         return flow {
             emit(value = Resource.Loading(true))
 
-            val localListings = dao.querySearchListing(searchQuery)
+            val localListings = db.dao.querySearchListing(searchQuery)
             emit(Resource.Success(
                 data = localListings.map { it.toSearch() }
             ))
@@ -53,7 +52,7 @@ class SearchRepositoryImpl @Inject constructor(
             }
 
             remoteListings?.let { listings ->
-                dao.insertSearchListing(
+                db.dao.insertSearchListing(
                     listings.hits.map { it.toSearchEntity() }
                 )
                 emit(Resource.Success(
